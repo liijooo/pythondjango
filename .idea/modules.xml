@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/PythonPrograms.iml" filepath="$PROJECT_DIR$/.idea/PythonPrograms.iml" />
+=======
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/django.iml" filepath="$PROJECT_DIR$/.idea/django.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pythondjango.iml" filepath="$PROJECT_DIR$/.idea/Pythondjango.iml" />
+>>>>>>> a6f83535462436fec531ac943d08be061e28f50f
+>>>>>>> 98d774d60d72449f263574a237e8db5801e1266d
     </modules>
   </component>
 </project>

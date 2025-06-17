@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+    {%block title %}
+    <title>Addbook(user-defined)</title>
+    {% endblock %}
+
+<h2>Addbook(user-defined)</h2>
+{% block content %}
+<div class="container w-50 border border-2 p-4 mt-4">
+    <h2>Addbook(user-defined)</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label class="form-label">title</label>
+        <input class="text" name='t' class="form-control">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">author</label>
+        <input class="text" name='a' class="form-control">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">price</label>
+        <input class="number" name='p' class="form-control">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">pages</label>
+        <input class="number" name='g' class="form-control">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">language</label>
+        <input class="text" name='l' class="form-control">
+    </div>
+             <div class="mb-3">
+        <label class="form-label">image</label>
+        <input class="file" name='i' class="form-control">
+    </div>
+
+    <input type="submit" class="btn btn-light">
+</form></div>
+{% endblock %}
