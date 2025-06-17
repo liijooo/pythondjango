@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+    {%block title %}
+    <title>Viewbook</title>
+    {% endblock %}
+{% block content %}
+<h2>booklist</h2>
+{{books}}
+
+<div class="container w-50 mt-3 p-5">
+<table class="table table-bordered">
+    <tr>
+        <th>Author</th>
+        <th>Title</th>
+        <th>Pages</th>
+        <th>Price</th>
+        <th>language</th>
+        <th>Image</th>
+        <th>Action</th>
+    </tr>
+    {% for b in books %}
+    <tr>
+        <td>{{b.title}}</td>
+        <td>{{b.author}}</td>
+        <td>{{b.pages}}</td>
+        <td>{{b.price}}</td>
+        <td>{{b.language}}</td>
+        <td><img src="{{b.image.url}}" height="150px"></td>
+        <td><a class="btn btn-light me-4" href="{% url 'books:bookdetail' b.id %}">detail</a>
+            <a class="btn btn-light me-4" href="{% url 'books:editbook' b.id %}">edit</a>
+            <a class="btn btn-light me-4" href="{% url 'books:deletebook' b.id %}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}
